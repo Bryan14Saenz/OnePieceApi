@@ -3,11 +3,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  width: 100%;
   padding: 20px;
-  bottom: 0;
-  background-color: #a4c0d4;
+  background-color: #1c0c14;
 }
 footer .footer-mailto {
   display: flex;
@@ -16,7 +13,7 @@ footer .footer-mailto {
   padding: 20px 0;
   gap: 20px;
   border-radius: 20px;
-  background-color: #696f90;
+  background-color: #83847c;
 }
 footer .footer-mailto h2 {
   text-align: center;
@@ -37,12 +34,13 @@ footer .footer-mailto a {
   padding: 5px 10px;
   font-size: 1.2rem;
   border-radius: 20px;
-  border: 1px solid #0550e4;
-  color: #0550e4;
+  border: 1px solid #1c0c14;
+  color: #1c0c14;
 }
 footer .footer-mailto a:hover {
-  background-color: #0550e4;
-  color: #a4c0d4;
+  border: 1px solid #1c0c14;
+  background-color: #1c0c14;
+  color: #83847c;
 }
 footer .footer-info {
   display: flex;
@@ -54,7 +52,7 @@ footer .footer-info {
 }
 footer .footer-info p {
   font-size: 1.2rem;
-  color: #063dc1;
+  color: #ccc4b4;
 }
 footer .footer-info ul {
   display: flex;
@@ -69,10 +67,10 @@ footer .footer-info ul li a {
   text-decoration: none;
   transition: all 0.5s ease;
   font-size: 1.2rem;
-  color: #0550e4;
+  color: #ccc4b4;
 }
 footer .footer-info ul li a:hover {
-  color: #b79169;
+  color: #b24c7f;
 }
 
 /*# sourceMappingURL=footer.css.map */

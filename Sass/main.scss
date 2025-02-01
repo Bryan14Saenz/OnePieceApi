@@ -1,0 +1,112 @@
+@import 'variables';
+@import 'mixin';
+
+#main {
+  background: url(../Assets/Img/wallpaper.png);
+  background-size: 150px;
+
+  .main-contenedor {
+    position: relative;
+    background: url(../Assets/Img/inicio.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 85vh;
+
+    .contenedor-flotante {
+      position: absolute;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.5s ease;
+      width: 300px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 10px;
+      top: 20%;
+      right: 15%;
+      box-shadow: 0px 0px 5px 0px $color1;
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        transition: all 0.5s ease;
+        width: 100%;
+        background-color: $color1;
+
+        a {
+          text-decoration: none;
+          color: $color2;
+        }
+
+        &:hover {
+          border: 1px solid $color1;
+          background-color: $color2;
+
+          a {
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+
+  .main-buscador {
+    @include display;
+
+    input {
+      outline: none;
+      font-size: 1rem;
+      margin: 20px 5px;
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+
+      &:focus {
+        border: 1px solid $color1;
+      }
+    }
+
+    label {
+      font-size: 1rem;
+      color: $color2;
+    }
+  }
+
+  .main-personajes {
+    @include display;
+    width: 70%;
+    margin: 0 auto;
+
+    #personaje {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+      .personaje {
+        text-align: center ;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $color4;
+
+        h2 {
+          font-size: 1.5rem;  
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

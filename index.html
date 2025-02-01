@@ -39,10 +39,36 @@
   </header>
 
   <!-- Main -->
-  <main></main>
+  <main id="main">
+    <!-- Contenedor Incio -->
+    <div class="main-contenedor">
+      <div class="contenedor-flotante">
+        <h2>Que es One Piece API?</h2>
+        <p class="textoApi">
+          La API de One Piece es una API RESTFUL que está vinculada a una extensa base de datos de one piece. Esta API
+          además de ser gratuita y
+          de libre acceso, está disponible para que la comunidad de desarrolladores pueda hacer pruebas con ella.
+        </p>
+        <button class="btn">
+          <a href="https://api-onepiece.com" target="_blank">Ir a la API</a>
+        </button>
+      </div>
+    </div>
+    <!-- Contenedor Buscador -->
+    <div class="main-buscador">
+      <input type="text" name="buscador" id="buscador" placeholder="Busca tu Personajes">
+      <label for="buscador">
+        <i class="bi bi-search"></i>
+      </label>
+    </div>
+    <!-- Contenedor Personajes -->
+    <div class="main-personajes">
+      <div class="personaje" id="personaje"></div>
+    </div>
+  </main>
 
   <!-- Footer -->
-  <footer id="footer">
+  <footer id="footer" class="container-fluid">
     <!-- Mailto -->
     <div class="footer-mailto fadeIn">
       <h2>Hablemos</h2>
